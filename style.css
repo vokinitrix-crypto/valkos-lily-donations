@@ -223,3 +223,47 @@ line-height:1.1;
 
     border-top:1px solid #284136;
 }
+
+.valko-main{
+    width:420px;
+    max-width:90%;
+    border-radius:30px;
+    display:block;
+    margin:auto;
+    box-shadow:
+        0 0 35px rgba(120,255,180,.25),
+        0 0 80px rgba(0,255,180,.18);
+    transition:.4s;
+}
+
+.valko-main:hover{
+    transform:scale(1.03);
+}
+
+.hero-image{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.chibi{
+    position:absolute;
+    width:140px;
+    transition:.35s ease;
+    filter:drop-shadow(0 0 20px rgba(120,255,180,.35));
+}
+
+.chibi:hover{
+    transform:scale(1.1) rotate(5deg);
+}
+
+.chibi-left{
+    left:-90px;
+    bottom:20px;
+}
+
+.chibi-right{
+    right:-90px;
+    bottom:20px;
+}
