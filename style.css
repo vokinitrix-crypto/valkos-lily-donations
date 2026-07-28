@@ -108,12 +108,18 @@ nav a:hover{
   front-size: 22px;
 }
 .hero h1{
-
-    font-size:4rem;
-  font-weight:800;
-line-height:1.05;
+     font-family:'Cormorant Garamond',
+    font-size:5rem;
+  font-weight:700;
+line-height:95;
+  color:white;
     margin-bottom:25px;
-   text-shadow: 0 0 30px rgba(73,179,122,.35);
+   text-shadow: 0 0 12px rgba(160,255,180,.45); 0 0 28px rgba(120,255,170,.35);
+}
+  
+  .hero h1 span{
+     color:#B8FFB6;
+     text-shadow: 0 0 20px rgba(170,255,180,.8), 0 0 40px rgba(120,255,170,.45)
 }
 
 .subtitle{
