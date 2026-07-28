@@ -4,13 +4,15 @@
   box-sizing:border-box;
 }
 body{
+  margin:0;
   background:
-    radial-gradient(circle at top,
-    rgba(73,179,122,.12),
-    transparent 45%),
-    
-    #0B1712;
+    linear-gradient(rgba(8,15,12,.72), rgba(8,15,12,.82)),
+    url("./images/IMG_4377.jpeg");
   
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+   
   color:white;
   font-family:Inter,sans-serif;
 }
