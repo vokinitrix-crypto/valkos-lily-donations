@@ -258,8 +258,8 @@ nav a:hover{
     grid-template-columns:repeat(4,250px);
     justify-content:center;
     gap:36px;
-    margin-top:70px auto 0;
-    width:fit-content;
+    margin-top:70px;
+    width:100%;
 }
     .stat-card{
         width:250px;
