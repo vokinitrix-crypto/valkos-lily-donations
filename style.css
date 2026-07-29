@@ -214,6 +214,7 @@ nav a:hover{
             0 0 18px #90F26F,
             0 0 35px rgba(184,255,14,.8);
     animation: glow 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * .6s);
 }
         .fireflies span:nth-child(1){top:12%;left:6%;}
         .fireflies span:nth-child(2){top:28%;left:18%;}
@@ -225,9 +226,26 @@ nav a:hover{
         .fireflies span:nth-child(8){top:60%;left:60%;}
 
 @keyframes glow{
-    0%,100%
-       opacity:.25;
-        transform:scale(.8);
+    0%{
+        opacity:.2;
+        transform:translate(0,0) scale(.8);
+}
+    25%{
+        opacity:.7;
+        transform:translate(8px,-12px) scale(1);
+}
+    50%{
+        opacity:1;
+        transform:translate(-6px,-22px) scale(1.36);
+}
+    75%{
+        opacity:.6;
+        transform:translate(10px,-12px) scale(.95);
+}
+    100%{
+        opacity:.25
+        transform:translate(0,0) scale(.8);
+}
 }
 50%{
    opacity:1;
