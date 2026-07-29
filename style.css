@@ -262,13 +262,61 @@ nav a:hover{
         padding:28px;
         border-radius:22px;
 
-        background:rgba(16,20,16,.45);
-        backdrop-filter:blur(16px);
-        -webkit-backdrop-filter:blur(16px);
+        background:linear-gradient(
+            180deg,
+            rgba(255,255,255,.14),
+            rgba(255,255,255,.05)
+            );
+        backdrop-filter:blur(26px) saturate(180%);
+        -webkit-backdrop-filter:blur(26px) saturate(180%);
 
-        border:1px solid rgba(184,255,144,.12);
+        border:1px solid rgba(255,255,255,.25);
         box-shadow:
-            0 15px 45px rgba(0,0,0,.35);
+            0 30px 60px rgba(0,0,0,.45),
+            inset 0 1px 1px rgba(255,255,255,.45),
+            inset 0 -1px 1px rgba(255,255,255,.08);
+            
+        position:relative;
+        overflow:hidden;
+}
+        .stat-card:before{
+            content:"";
+            position:absolute;
+            inset:0;
+            padding:1px;
+            border-radius:22px;
+
+            background:linear-gradient(
+                135deg,
+                rgba(255,255,255,.85),
+                rgba(255,255,255,.15),
+                rgba(255,255,255,.55);
+         );
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            
+            -webkit-mask-composite:xor;
+            mask-composite:exclude;
+
+            pointer-events:none;
+}
+        .stat-card:: after{
+            content:"";
+            position:absolute;
+
+            top:-35%;
+            left:-35%;
+
+            width:80%;
+            height:80%
+                background:radial-gradient(
+                   circle,
+                   rgba(255,255,255,.25),
+                   transparent 70%);
+        
+           transform:rotate(25deg);
+           pointer-events:none;
 }
         .stat-card h2{
             font-size:46px;
