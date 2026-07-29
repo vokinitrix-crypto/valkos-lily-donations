@@ -126,16 +126,17 @@ nav a:hover{
     display:flex;
     align-items:center;
     overflow:hidden;
+    padding-top:110px;
 }
     .hero-overlay{
         position:absolute;
         inset:0;
         background:linear-gradient(
             90deg,
-            rgba(5,8,5,.88) 0%,
-            rgba(5,8,5,.55) 40%,
-            rgba(5,8,5,.15) 75%,
-            rgba(5,8,5,.45) 100%
+            rgba(5,8,5,.92) 0%,
+            rgba(5,8,5,.72) 32%,
+            rgba(5,8,5,.28) 65%,
+            rgba(5,8,5,55)  100%
       );
 } 
     .hero-content{
@@ -144,7 +145,8 @@ nav a:hover{
 }
      .hero-text{
          max-width:560px;
-         padding-top:90px;
+         padding-top:40px;
+         margin-left:20px;
 }
     .hero-subtitle{
         color:#90F26F;
@@ -153,18 +155,20 @@ nav a:hover{
         margin-bottom:25px;
 } 
     .hero h1{
-        font-size:88px;
-        line-height:.95;
-        margin-bottom:25px;
+        font-size:78px;
+        line-height:.92;
+        margin-bottom:20px;
+        font-weight:700;
 }
     .hero h1 span{
         color:#90F26F;
 }
     .hero-description{
-        color:#d9d9d9;
-        font-size:20px;
-        line-height:1.7;
-        margin-bottom:35px;
+        color:#d8d8d8;
+        font-size:22px;
+        line-height:1.6;
+        margin-bottom:40px;
+        max-width:500px;
 }
     .hero-button{
         display:inline-block;
