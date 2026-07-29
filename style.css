@@ -70,7 +70,7 @@ nav a:hover{
     .support-btn:hover{
         background:#8EF270;
         color:#111;
-        boader-color:#8EF270;
+        border-color:#8EF270;
 }
  .header{
      padding:18px 0;
@@ -116,4 +116,61 @@ nav a:hover{
     .support-btn:hover{
         background:#8EF270;
         color:#111;
+        border-color:#8EF270;
+}
+.hero{
+    position:relative;
+    min-height:100vh;
+    background:url("images/IMG_4377.jpeg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+    .hero-overlay{
+        position:absolute;
+        inset:0;
+        background:linear-gradient(
+            90deg,
+            rgba(5,8,5,.88) 0%,
+            rgba(5,8,5,.55) 40%,
+            rgba(5,8,5,.15) 75%,
+            rgba(5,8,5,.45) 100%
+      );
+} 
+    .hero-content{
+        position:relative;
+        z-index:2;
+}
+     .hero-text{
+         max-width:560px;
+         padding-top:90px;
+}
+    .hero-subtitle{
+        color:#90F26F;
+        font-size:13px;
+        letter-spacing:3px;
+        margin-bottom:25px;
+} 
+    .hero h1{
+        font-size:88px;
+        line-height:.95;
+        margin-bottom:25px;
+}
+    .hero h1 span{
+        color:#90F26F;
+}
+    .hero-description{
+        color:#d9d9d9;
+        font-size:20px;
+        line-height:1.7;
+        margin-bottom:35px;
+}
+    .hero-button{
+        display:inline-block;
+        background:#90F25F;
+        color;#111;
+        text-decoration:none;
+        padding:18px 34px;
+        border-radius:999px;
+        font-weight:700;
 }
