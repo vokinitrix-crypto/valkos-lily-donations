@@ -153,6 +153,10 @@ nav a:hover{
          max-width:560px;
          padding-top:130px;
          margin-left:90px;
+         
+         position:absolute;
+         left:0;
+         top:130px;
 }
     .hero-subtitle{
         font-family:"Inter", sans-serif;
