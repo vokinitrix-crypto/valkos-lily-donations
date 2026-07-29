@@ -273,3 +273,22 @@ line-height:95;
     right:-90px;
     bottom:20px;
 }
+  .hero-title{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    line-height:0.95;
+
+    letter-spacing:-2px;
+
+    color:white;
+
+    text-shadow:
+        0 0 18px rgba(150,255,180,.35),
+        0 0 40px rgba(120,255,180,.20);
+
+    margin-bottom:25px;
+
+}
