@@ -196,3 +196,40 @@ nav a:hover{
         border-radius:999px;
         font-weight:700;
 }
+.fireflies{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+}
+.fireflies span{
+    position:absolute;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#B8FF90;
+
+        box-shadow:
+            0 0 8px  #B8FF90,
+            0 0 18px #90F26F,
+            0 0 35px rgba(184,255,14,.8);
+    animation: glow 3s ease-in-out infinite;
+}
+        .fireflies span:nth-child(1){top:12%;left:6%;}
+        .fireflies span:nth-child(2){top:28%;left:18%;}
+        .fireflies span:nth-child(3){top:75%;left:4%;}
+        .fireflies span:nth-child(4){top:18%;right:12%;}
+        .fireflies span:nth-child(5){top:44%;right:5%;}
+        .fireflies span:nts-child(6){bottom:16%;right:20%;} 
+        .fireflies span:nts-child(7){bottom:8%;left:24%;}
+        .fireflies span:nts-child(8){top:60%;left:60%;}
+
+@keyframes glow{
+    0%,100%
+       opacity:.25;
+        transform:scale(.8);
+}
+50%{
+   opacity:1;
+   trasform:scale(1.4);
+}
