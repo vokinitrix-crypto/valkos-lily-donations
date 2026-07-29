@@ -255,11 +255,11 @@ nav a:hover{
     .hero-stats{
     display:grid;
     grid-template-columns:repeat(4,250px);
-    justify-content:center;
     gap:28px;
-    margin-top:70px;
+    transform:translateX(-50%);
     width:max-content;
-    bottom:35%;
+    bottom:40px;
+    left:50%;
 }
     .stat-card{
         width:250px;
