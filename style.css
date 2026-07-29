@@ -141,22 +141,17 @@ nav a:hover{
 } 
     .hero-content{
         position:relative;
-        z-index:2;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        min-height:85vh;
+        z-index: 2;
+        min-height:100vh;
         width:100%;
-        align-items:flex-start;
+        
 }
      .hero-text{
          max-width:560px;
-         padding-top:130px;
-         margin-left:90px;
-         
-         position:relative;
-         left:-70px;
-         top:130px;
+         padding-top:120px;
+         position:absolute;
+         left:60px;
+         top:120px;
 }
     .hero-subtitle{
         font-family:"Inter", sans-serif;
@@ -261,9 +256,10 @@ nav a:hover{
     display:grid;
     grid-template-columns:repeat(4,250px);
     justify-content:center;
-    gap:36px;
+    gap:28px;
     margin-top:70px;
-    width:100%;
+    width:max-content;
+    bottom:35%;
 }
     .stat-card{
         width:250px;
