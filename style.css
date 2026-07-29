@@ -144,8 +144,8 @@ nav a:hover{
         z-index:2;
 }
      .hero-text{
-         max-width:560px;
-         padding-top:40px;
+         max-width:620px;
+         padding-top:130px;
          margin-left:20px;
 }
     .hero-subtitle{
@@ -158,23 +158,25 @@ nav a:hover{
         margin-bottom:24px;
 } 
     .hero h1{
-        font-family:"Cormorant Garamond",
-        font-size:92px;
-        line-height:.88;
-        margin-bottom:18px;
-        font-weight:600;
+        font-family:"Cormorant Garamond", serif;
+        font-size:96px;
+        line-height:.9;
+        margin-bottom:30px;
+        font-weight:500;
+        letter-spacing:-2px;
         color:#ffffff; 
 
         text-shadow:
-            0 0 10px rgba(255,255,255,.18),
-            0 0 25px rgba(255,255,255,.12);
+            0 0 8px rgba(255,255,255,.25),
+            0 0 18px rgba(255,255,255,.18),
+            0 0 35px rgba(255,255,255,.10);
 }
     .hero h1 span{
-        color:#B8FF8A;
+        color:#B8FF90;
 
          text-shadow:
-             0 0 12px rgba(184,255,138,.45),
-             0 0 30px rgba(143,243,112,.30); 
+             0 0 18px rgba(184,255,144,.45),
+             0 0 30px rgba(184,255,144,.18); 
 }
     .hero-description{
         font-family:"Inter", sans-serif;
