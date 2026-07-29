@@ -253,14 +253,15 @@ nav a:hover{
 }
     .hero-stats{
     display:grid;
-    grid-template-columns:repeat(4,minmax(220px,1fr));
-    gap:24px;
+    grid-template-columns:repeat(4,250px);
+    justify-content:center;
+    gap:40px;
     margin-top:70px;
     width:100%;
 }
     .stat-card{
         width:250px;
-        min-height:320px;
+        height:250px;
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -276,10 +277,11 @@ nav a:hover{
         backdrop-filter:blur(26px) saturate(180%);
         -webkit-backdrop-filter:blur(26px) saturate(180%);
 
-        border:1px solid rgba(255,255,255,.25);
+        border:2px solid rgba(255,255,255,.38);
         box-shadow:
-            0 0 25px rgba(190,255,200,.15),
-            0 20px 60px rgba(0,0,0,.55),
+            0 0 20px rgba(255,255,255,.15),
+            0 0 45px rgba(184,255,144,.15),
+            0 40px 80px rgba(0,0,0,.55),
             inset 0 2px 2px rgba(255,255,255,.55),
             inset 0 -2px 2px rgba(255,255,255,.08);
             
@@ -291,9 +293,9 @@ nav a:hover{
         .stat-card:before{
             content:"";
             position:absolute;
-            inset:0;
+            inset:8px;
             padding:2px;
-            border-radius:22px;
+            border-radius:20px;
 
             background:linear-gradient(
                 135deg,
@@ -341,9 +343,8 @@ nav a:hover{
           border-radius:28px;
 
           background:
-              
-          linear-gradient(
-              135deg,
+            linear-gradient(
+            135deg,
              rgba(255,255,255,.35) 0%,
              transparent 18%,
              transparent 82%,
@@ -355,7 +356,7 @@ nav a:hover{
     mix-blend-mode:screen;
 }
         .stat-card h2{
-            font-size:46px;
+            font-size:60px;
             color:#fff;
             margin-bottom:10px;
             margin-top:40px;
@@ -369,13 +370,11 @@ nav a:hover{
 }
         .stat-card i{
 
-    font-size:58px;
+        font-size:48px;
+        color:#B8FF90;
+        margin-bottom:22px;
 
-    color:#B8FF90;
-
-    margin-bottom:35px;
-
-    text-shadow:
+        text-shadow:
         0 0 10px rgba(184,255,144,.8),
         0 0 20px rgba(184,255,144,.6),
         0 0 40px rgba(184,255,144,.35);
