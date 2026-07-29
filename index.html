@@ -4,49 +4,61 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Valko's Lily Donations</title>
+
+<meta name="description" content="Community charity project supporting trusted charities around the world.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="images/logo.png">
 
 </head>
 
 <body>
 
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
 <header>
 
-<div class="container nav">
+<div class="container navbar">
 
-<div class="logo">
+<a href="#" class="logo">
 
 <img src="images/logo.png" alt="Logo">
 
-<div>
+<div class="logo-text">
 
 <h2>Valko's</h2>
 
-<span>Lily Donations</span>
+<p>Lily Donations</p>
 
 </div>
 
-</div>
+</a>
 
 <nav>
 
-<a href="#">Home</a>
+<ul>
 
-<a href="#">Charities</a>
+<li><a href="#home">Home</a></li>
 
-<a href="#">Direct Donations</a>
+<li><a href="#charities">Charities</a></li>
 
-<a href="#">About</a>
+<li><a href="#donations">Direct Donations</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
 
 </nav>
 
@@ -60,15 +72,23 @@
 
 </header>
 
-<section class="hero">
+<main>
 
-<div class="overlay"></div>
+<section class="hero" id="home">
 
-<div class="container hero-wrapper">
+<div class="hero-background">
+
+<img src="images/background.jpg" alt="Forest">
+
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
 
 <div class="hero-left">
 
-<p class="hero-top">
+<p class="hero-subtitle">
 
 COMMUNITY DRIVEN • TRANSPARENT • GLOBAL IMPACT
 
@@ -82,7 +102,11 @@ Valko's Lily
 
 </h1>
 
-<div class="line"></div>
+<div class="hero-divider">
+
+<img src="images/logo-small.png" alt="">
+
+</div>
 
 <p class="hero-text">
 
@@ -90,9 +114,11 @@ We help the community support trusted charities around the world while keeping e
 
 </p>
 
-<a href="#" class="hero-button">
+<div class="hero-buttons">
 
-Explore Donations →
+<a href="#charities" class="primary-btn">
+
+Explore Donations
 
 </a>
 
@@ -100,21 +126,35 @@ Explore Donations →
 
 <div class="hero-right">
 
-<img src="images/hero.png" alt="Valko">
-  
+<img src="images/hero.png"
 
-</div>
+class="hero-image"
 
-</div>
+alt="Valko">
 
-</section>
-  <div class="stats">
+</div> 
 
-<div class="container stats-grid">
+  <img src="images/chibi-left.png"
+
+class="chibi left"
+
+alt="Chibi">
+
+<img src="images/chibi-right.png"
+
+class="chibi right"
+
+alt="Chibi">
+
+<div class="stats">
 
 <div class="stat-card">
 
-<div class="icon">♡</div>
+<div class="icon">
+
+❤
+
+</div>
 
 <div>
 
@@ -128,7 +168,11 @@ Explore Donations →
 
 <div class="stat-card">
 
-<div class="icon">👥</div>
+<div class="icon">
+
+👥
+
+</div>
 
 <div>
 
@@ -142,7 +186,11 @@ Explore Donations →
 
 <div class="stat-card">
 
-<div class="icon">🌎</div>
+<div class="icon">
+
+🌎
+
+</div>
 
 <div>
 
@@ -156,7 +204,11 @@ Explore Donations →
 
 <div class="stat-card">
 
-<div class="icon">❤</div>
+<div class="icon">
+
+
+
+</div>
 
 <div>
 
@@ -170,197 +222,4 @@ Explore Donations →
 
 </div>
 
-</div>
-
-</section> 
-  <div class="stats">
-
-<div class="container stats-grid">
-
-<div class="stat-card">
-
-<div class="icon">♡</div>
-
-<div>
-
-<h3>$124,580</h3>
-
-<p>Total Raised USD</p>
-
-</div>
-
-</div>
-
-<div class="stat-card">
-
-<div class="icon">👥</div>
-
-<div>
-
-<h3>48</h3>
-
-<p>Organizations Supported</p>
-
-</div>
-
-</div>
-
-<div class="stat-card">
-
-<div class="icon">🌎</div>
-
-<div>
-
-<h3>23</h3>
-
-<p>Countries Reached</p>
-
-</div>
-
-</div>
-
-<div class="stat-card">
-
-<div class="icon">❤</div>
-
-<div>
-
-<h3>1,250+</h3>
-
-<p>Donors in the Community</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
-  <section class="charities">
-
-<div class="container">
-
-<div class="section-header">
-
-<h2>Featured Charities</h2>
-
-<a href="#">View All Charities →</a>
-
-</div>
-
-<div class="charity-grid">
-
-<div class="charity-card">
-
-<img src="images/charity1.jpg">
-
-<div class="charity-content">
-
-<h3>Defenders of Wildlife</h3>
-
-<p>
-Protecting wildlife and their habitats.
-</p>
-
-<a href="#">Donate Now</a>
-
-</div>
-
-</div>
-
-<div class="charity-card">
-
-<img src="images/charity2.jpg">
-
-<div class="charity-content">
-
-<h3>Ocean Conservancy</h3>
-
-<p>
-
-Supporting healthy oceans and marine life.
-
-</p>
-
-<a href="#">Donate Now</a>
-
-</div>
-
-</div>
-
-<div class="charity-card">
-
-<img src="images/charity3.jpg">
-
-<div class="charity-content">
-
-<h3>Covenant House</h3>
-
-<p>
-
-Helping young people experiencing homelessness.
-
-</p>
-
-<a href="#">Donate Now</a>
-
-</div>
-
-</div>
-
-<div class="charity-card">
-
-<img src="images/charity4.jpg">
-
-<div class="charity-content">
-
-<h3>Trees for Life</h3>
-
-<p>
-
-Restoring forests around the world.
-
-</p>
-
-<a href="#">Donate Now</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-  <footer>
-
-<div class="container footer-content">
-
-<p>
-
-© 2026 Valko's Lily Donations
-
-</p>
-
-<div>
-
-<a href="#">Discord</a>
-
-<a href="#">Twitter</a>
-
-<a href="#">Instagram</a>
-
-</div>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
