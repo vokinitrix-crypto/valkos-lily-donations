@@ -146,6 +146,8 @@ nav a:hover{
         flex-direction:column;
         justify-content:space-between;
         min-height:85vh;
+        width:100%;
+        align-items:center;
 }
      .hero-text{
          max-width:560px;
@@ -255,9 +257,9 @@ nav a:hover{
     display:grid;
     grid-template-columns:repeat(4,250px);
     justify-content:center;
-    gap:40px;
-    margin-top:70px;
-    width:100%;
+    gap:36px;
+    margin-top:70px auto 0;
+    width:fit-content;
 }
     .stat-card{
         width:250px;
