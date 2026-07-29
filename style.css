@@ -154,8 +154,8 @@ nav a:hover{
          padding-top:130px;
          margin-left:90px;
          
-         position:absolute;
-         left:0;
+         position:relative;
+         left:-120px;
          top:130px;
 }
     .hero-subtitle{
