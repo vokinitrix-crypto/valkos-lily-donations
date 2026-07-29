@@ -159,24 +159,25 @@ nav a:hover{
 } 
     .hero h1{
         font-family:"Cormorant Garamond", serif;
-        font-size:96px;
+        font-size:100px;
         line-height:.9;
         margin-bottom:30px;
         font-weight:500;
         letter-spacing:-2px;
-        color:#ffffff; 
+        color:#F6F6F2
 
         text-shadow:
-            0 0 8px rgba(255,255,255,.25),
-            0 0 18px rgba(255,255,255,.18),
-            0 0 35px rgba(255,255,255,.10);
+            0 0 8px rgba(255,255,255,.20),
+            0 0 20px rgba(255,255,255,.14),
+            0 0 45px rgba(255,255,255,.80);
 }
     .hero h1 span{
         color:#B8FF90;
 
          text-shadow:
-             0 0 18px rgba(184,255,144,.45),
-             0 0 30px rgba(184,255,144,.18); 
+             0 0 12px rgba(184,255,144,.60),
+             0 0 30px rgba(184,255,144,.35); 
+             0 0 60pc rgba(184,255,144,.15)
 }
     .hero-description{
         font-family:"Inter", sans-serif;
