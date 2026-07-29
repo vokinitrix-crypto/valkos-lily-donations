@@ -327,6 +327,33 @@ nav a:hover{
            transform:rotate(25deg);
            pointer-events:none;
 }
+        .stat-card::after{
+
+          content:"";
+
+          position:absolute;
+
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+
+          border-radius:28px;
+
+          background:
+              
+          linear-gradient(
+              135deg,
+             rgba(255,255,255,.35) 0%,
+             transparent 18%,
+             transparent 82%,
+             rgba(255,255,255,.20) 100%
+    );
+
+    pointer-events:none;
+
+    mix-blend-mode:screen;
+}
         .stat-card h2{
             font-size:46px;
             color:#fff;
@@ -340,5 +367,41 @@ nav a:hover{
             max-width:170px;
             text-align:center;
 }
-            
-        
+        .stat-card i{
+
+    font-size:58px;
+
+    color:#B8FF90;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(184,255,144,.8),
+        0 0 20px rgba(184,255,144,.6),
+        0 0 40px rgba(184,255,144,.35);
+
+    transition:.35s;
+}
+        .stat-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:.35s;
+
+    box-shadow:
+        0 0 45px rgba(184,255,144,.20),
+        0 35px 70px rgba(0,0,0,.55),
+        inset 0 2px 2px rgba(255,255,255,.55);
+}
+        .stat-card:hover i{
+
+    transform:scale(1.08);
+
+    text-shadow:
+
+        0 0 15px rgba(184,255,144,.9),
+
+        0 0 35px rgba(184,255,144,.7),
+
+        0 0 60px rgba(184,255,144,.45);
+}
