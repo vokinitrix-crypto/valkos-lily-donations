@@ -220,9 +220,9 @@ nav a:hover{
         .fireflies span:nth-child(3){top:75%;left:4%;}
         .fireflies span:nth-child(4){top:18%;right:12%;}
         .fireflies span:nth-child(5){top:44%;right:5%;}
-        .fireflies span:nts-child(6){bottom:16%;right:20%;} 
-        .fireflies span:nts-child(7){bottom:8%;left:24%;}
-        .fireflies span:nts-child(8){top:60%;left:60%;}
+        .fireflies span:nth-child(6){bottom:16%;right:20%;} 
+        .fireflies span:nth-child(7){bottom:8%;left:24%;}
+        .fireflies span:nth-child(8){top:60%;left:60%;}
 
 @keyframes glow{
     0%,100%
@@ -231,5 +231,5 @@ nav a:hover{
 }
 50%{
    opacity:1;
-   trasform:scale(1.4);
+   trasform: scale(1.4);
 }
