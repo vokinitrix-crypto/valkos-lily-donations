@@ -246,8 +246,38 @@ nav a:hover{
         opacity:.25
         transform:translate(0,0) scale(.8);
 }
+    50%{
+       opacity:1;
+       trasform: scale(1.4);
 }
-50%{
-   opacity:1;
-   trasform: scale(1.4);
+    .hero-stats{
+    display:flex;
+    gap:22px;
+    margin-top:70px;
+    flex-wrap:wrap;
 }
+    .stat-card{
+        width:220px;
+        padding:28px;
+        border-radius:22px;
+
+        background:rgba(16,20,16,.45);
+        backdrop-filter:blur(16px);
+        -webkit-backdrop-filter:blur(16px);
+
+        border:1px solid rgba(184,255,144,.12);
+        box-shadow:
+            0 15px 45px rgba(0,0,0,.35);
+}
+        .stat-card h2{
+            font-size:46px;
+            color:#ffffff;
+            margin-bottom:10px;
+}
+        .stat-card p{
+            color:cfcfcf;
+            line-height:1.6;
+            font-size:15px;
+}
+            
+        
