@@ -380,11 +380,10 @@ nav a:hover{
             text-align:center;
 }
         .stat-card i{
-
         font-size:30px;
         color:#B8FF90;
-        margin-bottom:12px;
-
+        margin-bottom:6px;
+        margin-top:8px;
         text-shadow:
         0 0 10px rgba(184,255,144,.8),
         0 0 20px rgba(184,255,144,.6),
