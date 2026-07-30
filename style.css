@@ -124,7 +124,7 @@ nav a:hover{
     min-height:100vh;
     
     background:url("images/IMG_4377.jpeg");
-    background-size:cover;
+    background-size:115%;
     background-repeat:no-repeat;
     background-position:95% center;
     
@@ -161,7 +161,7 @@ nav a:hover{
          max-width:560px;
          padding-top:120px;
          position:relative;
-         margin-left:30px;
+         margin-left:10px;
          mergin-top:120px;
 }
     .hero-subtitle{
@@ -268,11 +268,11 @@ nav a:hover{
     grid-template-columns:repeat(4,250px);
     gap:22px;
     width:max-content;
-    margin:110px auto 40px;
+    margin:170px auto 20px;
 }
     .stat-card{
-        width:220px;
-        height:140px;
+        width:240px;
+        height:135px;
         display:flex;
         flex-direction:column;
         justify-content:center;
