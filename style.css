@@ -122,9 +122,15 @@ nav a:hover{
 .hero{
     position:relative;
     min-height:100vh;
-    background:url("images/IMG_4377.jpeg") center/cover no-repeat;
+    
+    background:url("images/IMG_4377.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:82% center;
+    
     display:flex;
     align-items:center;
+    
     overflow:hidden;
     padding-top:110px;
 }
