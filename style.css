@@ -126,7 +126,7 @@ nav a:hover{
     background:url("images/IMG_4377.jpeg");
     background-size:cover;
     background-repeat:no-repeat;
-    background-position:88% center;
+    background-position:95% center;
     
     display:flex;
     align-items:center;
@@ -268,16 +268,16 @@ nav a:hover{
     grid-template-columns:repeat(4,250px);
     gap:22px;
     width:max-content;
-    margin:70px auto 40px;
+    margin:110px auto 40px;
 }
     .stat-card{
         width:220px;
-        height:160px;
+        height:140px;
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        padding:24px;
+        padding:20px;
         border-radius:28px;
 
         background:linear-gradient(
@@ -367,23 +367,23 @@ nav a:hover{
     mix-blend-mode:screen;
 }
         .stat-card h2{
-            font-size:42px;
+            font-size:34px;
             color:#fff;
-            margin-bottom:10px;
-            margin-top:40px;
+            margin-bottom:6px;
+            margin-top:18px;
 }
         .stat-card p{
             color:#cfcfcf;
-            line-height:1.6;
-            font-size:15px;
+            line-height:1.4;
+            font-size:14px;
             max-width:170px;
             text-align:center;
 }
         .stat-card i{
 
-        font-size:34px;
+        font-size:30px;
         color:#B8FF90;
-        margin-bottom:22px;
+        margin-bottom:12px;
 
         text-shadow:
         0 0 10px rgba(184,255,144,.8),
