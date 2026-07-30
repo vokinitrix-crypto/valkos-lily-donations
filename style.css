@@ -126,7 +126,7 @@ nav a:hover{
     background:url("images/IMG_4377.jpeg");
     background-size:cover;
     background-repeat:no-repeat;
-    background-position:82% center;
+    background-position:88% center;
     
     display:flex;
     align-items:center;
@@ -148,6 +148,11 @@ nav a:hover{
     .hero-content{
         position:relative;
         z-index: 2;
+        
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        
         min-height:100vh;
         width:100%;
         
@@ -155,9 +160,9 @@ nav a:hover{
      .hero-text{
          max-width:560px;
          padding-top:120px;
-         position:absolute;
-         left:60px;
-         top:120px;
+         position:relative;
+         margin-left:30px;
+         mergin-top:120px;
 }
     .hero-subtitle{
         font-family:"Inter", sans-serif;
@@ -261,20 +266,18 @@ nav a:hover{
     .hero-stats{
     display:grid;
     grid-template-columns:repeat(4,250px);
-    gap:28px;
-    transform:translateX(-50%);
+    gap:22px;
     width:max-content;
-    bottom:40px;
-    left:50%;
+    margin:70px auto 40px;
 }
     .stat-card{
-        width:250px;
-        height:250px;
+        width:220px;
+        height:160px;
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        padding:35px;
+        padding:24px;
         border-radius:28px;
 
         background:linear-gradient(
@@ -364,7 +367,7 @@ nav a:hover{
     mix-blend-mode:screen;
 }
         .stat-card h2{
-            font-size:60px;
+            font-size:42px;
             color:#fff;
             margin-bottom:10px;
             margin-top:40px;
@@ -378,7 +381,7 @@ nav a:hover{
 }
         .stat-card i{
 
-        font-size:48px;
+        font-size:34px;
         color:#B8FF90;
         margin-bottom:22px;
 
