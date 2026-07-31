@@ -98,9 +98,9 @@ nav a:hover{
     min-height:100vh;
     
     background:url("images/IMG_4377..PNG");
-    background-size:115%;
+    background-size:80%;
     background-repeat:no-repeat;
-    background-position:95% center;
+    background-position:120% center;
     
     display:flex;
     align-items:center;
