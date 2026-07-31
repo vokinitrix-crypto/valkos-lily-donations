@@ -362,3 +362,54 @@ nav a:hover{
         0 0 35px rgba(184,255,144,.7),
         0 0 60px rgba(184,255,144,.45);
 }
+
+@media (max-width: 1024px) {
+    .hero h1{
+        font-size:70px;
+}
+    .hero-text{
+        max-width:100%;
+        padding: 0 20px;
+}
+    nav{
+        gap:28px;
+}
+}
+
+@media (max-width: 768px) {
+    .hero{
+        min-height:auto;
+        padding-top:140px;
+        padding-bottom:40px;
+}
+    .hero h1{
+        font-size:48px;
+}
+    .hero-description{
+        font-size:16px;
+}
+    .hero-stats{
+        flex-direction:column;
+        align-items:center;
+}
+    .stat-card{
+        width:100%;
+        max-width:280px;
+}
+    nav{
+        gap:10;
+}
+    nav a{
+        font-size:11px;
+}
+    .header .container{
+        padding:12px 20px;
+}
+}
+@media (max-width: 400px) {
+    .hero h1{
+        font-size:38px;
+}
+}
+
+
