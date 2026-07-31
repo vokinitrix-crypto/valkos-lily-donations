@@ -189,7 +189,7 @@ nav a:hover{
         font-weight:700;
 }
 .fireflies{
-    position:absolute;
+    position:fixed;
     inset:0;
     pointer-events:none;
     z-index:1;
@@ -207,15 +207,15 @@ nav a:hover{
             0 0 35px rgba(184,255,144,.8);
     animation: glow 3s ease-in-out infinite;
     animation-delay: calc(var(--i) * .6s);
-}
-        .fireflies span:nth-child(1){top:12%;left:6%;}
-        .fireflies span:nth-child(2){top:28%;left:18%;}
-        .fireflies span:nth-child(3){top:75%;left:4%;}
-        .fireflies span:nth-child(4){top:18%;right:12%;}
-        .fireflies span:nth-child(5){top:44%;right:5%;}
-        .fireflies span:nth-child(6){bottom:16%;right:20%;} 
-        .fireflies span:nth-child(7){bottom:8%;left:24%;}
-        .fireflies span:nth-child(8){top:60%;left:60%;}
+} 
+      .fireflies span:nth-child(9){top:35%;left:40%;}
+      .fireflies span:nth-child(10){top:52%;left:75%;}
+      .fireflies span:nth-child(11){top:68%;left:10%;}
+      .fireflies span:nth-child(12){top:80%;left:55%;}
+      .fireflies span:nth-child(13){top:90%;left:30%;}
+      .fireflies span:nth-child(14){top:95%;right:15%;}
+      .fireflies span:nth-child(15){top:15%;left:50%;}
+      .fireflies span:nth-child(16){top:5%;right:35%;}
 
 @keyframes glow {
     0%{
