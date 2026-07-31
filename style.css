@@ -240,11 +240,11 @@ nav a:hover{
 }
 }
     .hero-stats{
-    display:grid;
-    grid-template-columns:repeat(4,250px);
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
     gap:22px;
-    width:max-content;
-    max-width: 100%;
+    max-width:100%;
     margin:170px auto 20px;
 }
     .stat-card{
