@@ -68,6 +68,10 @@ nav a{
     transition:.3s;
     border-bottom:1px solid transparent;
 }
+    nav a:visited{
+         color:#f4f4f4;
+}
+
 nav a:hover{
     color:#92f46d;
     border-color:92f46d;
@@ -241,12 +245,14 @@ nav a:hover{
 }
     .stat-card{
         width:240px;
-        height:135px;
+        min-height:150px;
+        height:auto;
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        padding:20px;
+        gap:10px;
+        padding:24px 20px;
         border-radius:28px;
 
         background:linear-gradient(
@@ -314,8 +320,7 @@ nav a:hover{
         .stat-card h2{
             font-size:34px;
             color:#fff;
-            margin-bottom:6px;
-            margin-top:18px;
+            margin:0;
 }
         .stat-card p{
             color:#cfcfcf;
@@ -323,18 +328,17 @@ nav a:hover{
             font-size:14px;
             max-width:170px;
             text-align:center;
+            margin:0;
 }
         .stat-card i{
         font-size:30px;
         color:#B8FF90;
-        margin-bottom:6px;
-        margin-top:8px;
+        margin:0;
         text-shadow:
         0 0 10px rgba(184,255,144,.8),
         0 0 20px rgba(184,255,144,.6),
         0 0 40px rgba(184,255,144,.35);
-
-    transition:.35s;
+        transition:.35s;
 }
         .stat-card:hover{
     transform:translateY(-8px);
