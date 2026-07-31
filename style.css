@@ -204,13 +204,18 @@ nav a:hover{
     height:8px;
     border-radius:50%;
     background:#B8FF90;
-
+    
+    will-change: transform, opacity;
+    black-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    
         box-shadow:
             0 0 8px  #B8FF90,
             0 0 18px #90F26F,
             0 0 35px rgba(184,255,144,.8);
     animation: glow 12s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 1.2s);
+    animation-delay: calc(var(--i) * -1.2s);
 } 
       .fireflies span:nth-child(9){top:35%;left:40%;}
       .fireflies span:nth-child(10){top:52%;left:75%;}
@@ -422,7 +427,7 @@ nav a:hover{
 .about-card{
     display:flex;
     flex-direction:row-reverse;
-    align-items:stretch;
+    align-items:central;
     gap:50px;
     background:linear-gradient(
         180deg,
@@ -513,6 +518,7 @@ nav a:hover{
 .about-image{
     flex:1;
     min-width:0;
+    height:420px;
     border-radius:20px;
     overflow:hidden;
 }
