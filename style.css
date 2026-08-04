@@ -31,7 +31,8 @@ body{
     align-items:center;
     background:rgba(10,12,10,.55);
    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur:1px solid rgba(255,255,255,.08);
+    -webkit-backdrop-filter:blur(18px);
+    border: 1 solid rgba(255,255,255,.08);
     border-radius:22px;
     padding: 16px 34px;
     boc-shadow:0 10px 40px rgba(0,0,0,.35);
@@ -100,6 +101,13 @@ nav a:hover{
     align-items:center;
     overflow:hidden;
     padding-top:110px;
+    background:
+        radial-gradient(ellipse 70% 55% at 78% 22%, rgba(46,92,48,.55) 0%,
+                        rgba(20,45,22,.35) 40%,
+                        rgba(5,8,5,0) 72%)
+                        radial-gradient(ecllipse 90% 60% at 15% 85%, rgba(22,48,24,.45) 0%,
+                                        rgba(5,8,5,0) 65%)
+                                        #050805;
 } 
     .hero-img{
         position:absolute;
@@ -122,11 +130,10 @@ nav a:hover{
         width:100%;
         height:100vh;
         background:linear-gradient(
-            90deg,
-            rgba(5,8,5,.92) 0%,
-            rgba(5,8,5,.72) 32%,
-            rgba(5,8,5,.28) 65%,
-            rgba(5,8,5,.55) 100%
+            180deg,
+            rgba(5,8,5,.0)  62%,
+            rgba(12,32,14,.55) 85%,
+            rgba(6,16,8,.92) 100%
       );
 } 
     .hero-content{
@@ -423,6 +430,12 @@ nav a:hover{
 }
 .about{
     padding:60px 0;
+    background:linear-gradient( 
+        180deg,
+        rgba(6,16,8,.92) 0%,
+        rgba(5,10,6,.6) 18%,
+        rgbs(5,8,5,0) 40%
+    );
 }
 .about-card{
     display:flex;
