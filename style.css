@@ -214,6 +214,12 @@ nav a:hover{
          padding-top:120px;
          position:relative;
          margin-left:10px;
+         padding:32px 36px;
+         border-radius:24px;
+         background:linear-gradient(120deg, rgba(5,8,5,.62),
+                    rgba(5,8,5,.32));
+         backdrop-filter:blur(10px);
+         -webkit-backdrop-filter:blur(10px);
          
 }
     .hero-subtitle{
@@ -447,7 +453,7 @@ nav a:hover{
 }
     .hero-text{
         max-width:52%;
-        padding: 0 20px;
+        padding:28px 30px;
 }
     nav{
         gap:28px;
