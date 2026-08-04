@@ -32,7 +32,7 @@ body{
     background:rgba(10,12,10,.55);
    backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
-    border: 1 solid rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.08);
     border-radius:22px;
     padding: 16px 34px;
     boc-shadow:0 10px 40px rgba(0,0,0,.35);
@@ -62,7 +62,7 @@ nav{
     gap:55px;
 }
 nav a{
-    color:f4f4f4;
+    color:#f4f4f4;
     text-decoration:none;
     font-size:15px;
     font-weight:500;
@@ -75,7 +75,7 @@ nav a{
 
 nav a:hover{
     color:#92f46d;
-    border-color:92f46d;
+    border-color:#92f46d;
 }   
 .support-btn{
     display:inline-flex;
@@ -105,8 +105,8 @@ nav a:hover{
         radial-gradient(ellipse 70% 55% at 78% 22%, rgba(46,92,48,.55) 0%,
                         rgba(20,45,22,.35) 40%,
                         rgba(5,8,5,0) 72%)
-                        radial-gradient(ecllipse 90% 60% at 15% 85%, rgba(22,48,24,.45) 0%,
-                                        rgba(5,8,5,0) 65%)
+                        radial-gradient(ellipse 90% 60% at 15% 85%, rgba(22,48,24,.45) 0%,
+                                        rgba(5,8,5,0) 65%);
                                         #050805;
 } 
     .hero-img{
@@ -157,7 +157,7 @@ nav a:hover{
         font-size:12px;
         font-weight:600;
         letter-spacing:4px;
-        text-trasform:uppercase;
+        text-transform:uppercase;
         margin-bottom:24px;
 } 
     .hero h1{
@@ -214,7 +214,7 @@ nav a:hover{
     
     will-change: transform, opacity;
     black-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: translateZ(0);
     
         box-shadow:
@@ -307,7 +307,7 @@ nav a:hover{
                 135deg,
                 rgba(255,255,255,.95),
                 rgba(180,255,180,.35),
-                rgba(255,255,255,.90);
+                rgba(255,255,255,.90)
          );
             -webkit-mask:
                 linear-gradient(#fff 0 0) content-box,
@@ -326,13 +326,10 @@ nav a:hover{
             
                 background:radial-gradient( 
                    135deg,
-                   rgba(255,255,255,.35),
-                    0%,
+                   rgba(255,255,255,.35), 0%,
                    transparent 18%,
                    transparent 82%,
-                   transparent 70%);
-                   tgba(255,255,255,.20)
-                    100% 
+                   tgba(255,255,255,.20) 100% 
          );
            mix-blend-mode:screen;
            pointer-events:none;
@@ -413,7 +410,7 @@ nav a:hover{
         max-width:280px;
 }
     nav{
-        gap:10;
+        gap:10px;
 }
     nav a{
         font-size:11px;
@@ -434,13 +431,13 @@ nav a:hover{
         180deg,
         rgba(6,16,8,.92) 0%,
         rgba(5,10,6,.6) 18%,
-        rgbs(5,8,5,0) 40%
+        rgba(5,8,5,0) 40%
     );
 }
 .about-card{
     display:flex;
     flex-direction:row-reverse;
-    align-items:central;
+    align-items:center;
     gap:50px;
     background:linear-gradient(
         180deg,
