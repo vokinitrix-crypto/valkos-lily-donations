@@ -1230,16 +1230,17 @@ nav a:hover{
     border-radius:999px;
     margin-bottom:16px;
 }
-.campaign-badge-wildlife{ background:rgba(184,142,255,.16); color:#B98EFF; }
-.campaign-badge-marine-life{ background:rgba(110,195,255,.16); color:#6EC3FF; }
-.campaign-badge-disaster-relief{ background:rgba(255,159,90,.16); color:#FF9F5A; }
-.campaign-badge-environmental{ background:rgba(142,242,112,.16); color:#8EF270; }
-.campaign-badge-homeless-support{ background:rgba(242,214,95,.16); color:#F2D65F; }
-.campaign-badge-womens-support{ background:rgba(255,143,194,.16); color:#FF8FC2; }
-.campaign-badge-mental-health{ background:rgba(95,226,199,.16); color:#5FE2C7; }
-.campaign-badge-childrens-charities{ background:rgba(143,211,255,.16); color:#8FD3FF; }
-.campaign-badge-medical-research{ background:rgba(255,111,111,.16); color:#FF6F6F; }
-.campaign-badge-humanitarian-aid{ background:rgba(255,130,102,.16); color:#FF8266; }
+.campaign-badge-wildlife{ background:rgba(92,124,250,.16); color:#5C7CFA; }
+.campaign-badge-animal-welfare{ background:rgba(255,212,59,.16); color:#FFD43B; }
+.campaign-badge-marine-life{ background:rgba(77,171,247,.16); color:#4DABF7; }
+.campaign-badge-disaster-relief{ background:rgba(232,89,12,.16); color:#E8590C; }
+.campaign-badge-environmental{ background:rgba(12,166,120,.16); color:#0CA678; }
+.campaign-badge-homeless-support{ background:rgba(255,169,77,.16); color:#FFA94D; }
+.campaign-badge-womens-support{ background:rgba(247,131,172,.16); color:#F783AC; }
+.campaign-badge-mental-health{ background:rgba(102,217,232,.16); color:#66D9E8; }
+.campaign-badge-childrens-charities{ background:rgba(230,73,128,.16); color:#E64980; }
+.campaign-badge-medical-research{ background:rgba(167,139,250,.16); color:#A78BFA; }
+.campaign-badge-humanitarian-aid{ background:rgba(250,82,82,.16); color:#FA5252; }
 .campaign-badge-community-services{ background:rgba(154,168,199,.16); color:#9AA8C7; }
 .campaign-card h3{
     font-family:"Inter", sans-serif;
