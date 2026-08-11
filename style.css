@@ -1322,4 +1322,32 @@ nav a:hover{
         grid-template-columns:1fr;
     }
 }
+.campaign-card-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.campaign-card-actions .campaign-view-btn{
+    width:auto;
+    flex:1;
+}
+.campaign-telegram-link{
+    flex-shrink:0;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(184,255,144,.35);
+    color:#B8FF90;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+.campaign-telegram-link:hover{
+    background:#8EF270;
+    color:#111;
+    border-color:#8EF270;
+}
 
