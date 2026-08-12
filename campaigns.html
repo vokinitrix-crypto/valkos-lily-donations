@@ -574,5 +574,29 @@
      <span style="--i:15;"></span>
      <span style="--i:16;"></span>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var chips = document.querySelectorAll('.campaign-filter-chip');
+    var cards = document.querySelectorAll('.campaign-card');
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var filter = chip.getAttribute('data-filter');
+
+        chips.forEach(function (c) { c.classList.remove('active'); });
+        chip.classList.add('active');
+
+        cards.forEach(function (card) {
+          var category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
 </body>
 </html>
