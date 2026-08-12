@@ -1350,4 +1350,37 @@ nav a:hover{
     color:#111;
     border-color:#8EF270;
 }
+.campaign-card-toprow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:16px;
+}
+.campaign-card-toprow .campaign-badge{
+    margin-bottom:0;
+}
+.campaign-status-pill{
+    display:inline-flex;
+    align-items:center;
+    font-family:"Inter", sans-serif;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    padding:5px 12px;
+    border-radius:999px;
+    white-space:nowrap;
+    flex-shrink:0;
+}
+.campaign-status-pill.campaign-status-active{
+    background:rgba(144,242,95,.16);
+    color:#90F25F;
+    border:1px solid rgba(144,242,95,.35);
+}
+.campaign-status-pill.campaign-status-ended{
+    background:rgba(255,111,111,.14);
+    color:#FF6F6F;
+    border:1px solid rgba(255,111,111,.30);
+}
 
