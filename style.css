@@ -1742,4 +1742,163 @@ nav a:hover{
         grid-template-columns:1fr;
     }
 }
+<style>
+.update-block {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.update-images {
+  display: flex;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.update-images img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.update-content {
+  flex: 1;
+}
+
+.hashtag-badge {
+  display: inline-block;
+  background: rgba(163, 230, 130, 0.15);
+  color: #a3e682;
+  border: 1px solid rgba(163, 230, 130, 0.4);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.update-content h3 {
+  font-size: 1.6rem;
+  margin: 0 0 12px;
+  color: #f5f5f5;
+}
+
+.update-content p {
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.view-donations-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #a3e682;
+  color: #a3e682;
+  border-radius: 999px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.view-donations-btn:hover {
+  background: rgba(163, 230, 130, 0.12);
+}
+
+@media (max-width: 640px) {
+  .update-block {
+    flex-direction: column;
+  }
+  .update-images {
+    width: 100%;
+  }
+  .update-images img {
+    width: 50%;
+    height: 160px;
+  }
+}
+</style>
+.li-selector {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.li-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(163, 230, 130, 0.1);
+  border: 1px solid rgba(163, 230, 130, 0.4);
+  color: #a3e682;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.li-tab-btn:hover {
+  background: rgba(163, 230, 130, 0.2);
+}
+
+.li-tab-btn.active {
+  background: #a3e682;
+  color: #0d1f0a;
+}
+
+.li-tab-content {
+  display: none;
+}
+
+.li-tab-content.active {
+  display: block;
+}
+
+.org-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.org-card h4 {
+  margin: 0 0 8px;
+  color: #f5f5f5;
+  font-size: 1.15rem;
+}
+
+.org-note {
+  color: #b5b5b5;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #a3e682;
+  color: #a3e682;
+  border-radius: 999px;
+  padding: 8px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.donate-btn:hover {
+  background: rgba(163, 230, 130, 0.12);
+}
+
 
