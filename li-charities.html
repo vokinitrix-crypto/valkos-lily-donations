@@ -56,6 +56,7 @@
   <div class="container">
     <div class="li-filters-row">
       <button class="li-filter-chip active" data-li="caleb"><i class="fa-solid fa-plane"></i> Caleb</button>
+      <button class="li-filter-chip" data-li="panda"><i class="fa-solid fa-paw"></i> Panda</button>
       
     </div>
   </div>
@@ -241,48 +242,47 @@
           <a href="https://t.co/me8yiYjiun" class="li-org-btn" target="_blank" rel="noopener">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>        
        </div>
-      <div class="li-selector">
-  <button class="li-tab-btn active" data-tab="caleb">✈️ Caleb</button>
-  <button class="li-tab-btn" data-tab="panda">🐼 Panda</button>
-</div>
-      section id="panda" class="li-tab-content">
-  <h2>Panda Donation Links</h2>
-
-  <div class="org-card">
-    <h4>Hong Kong Ocean Park Giant Panda Conservation</h4>
-    <p class="org-note">Supports panda conservation programs at Ocean Park Hong Kong.</p>
-    <a href="https://oceanpark.paydollar.com/oceanpark/dona" class="donate-btn" target="_blank" rel="noopener">Donate ↗</a>
-  </div>
-
-  <div class="org-card">
-    <h4>WWF – Adopt a Panda</h4>
-    <p class="org-note">Symbolic panda adoption through WWF UK.</p>
-    <a href="https://support.wwf.org.uk/adopt-a-panda" class="donate-btn" target="_blank" rel="noopener">Adopt ↗</a>
-  </div>
-
-  <div class="org-card">
-    <h4>Chengdu Giant Panda Breeding Research Foundation</h4>
-    <p class="org-note">Supports the Chengdu panda breeding and research foundation.</p>
-    <a href="https://m.pandafoundation.cn/en/AboutUs/BInformation/" class="donate-btn" target="_blank" rel="noopener">Donate ↗</a>
-  </div>
-
-  <div class="org-card">
-    <h4>Chengdu Research Base of Giant Panda Breeding</h4>
-    <p class="org-note">Official donation/support page for the Chengdu research base.</p>
-    <a href="https://m.panda.org.cn/en/support/support/" class="donate-btn" target="_blank" rel="noopener">Donate ↗</a>
-  </div>
-
-  <div class="org-card">
-    <h4>Panda Guardian</h4>
-    <p class="org-note">Chinese donation platform via Weibo. A VPN may be needed to donate.</p>
-    <a href="https://gongyi.weibo.com/h5/r/229405" class="donate-btn" target="_blank" rel="noopener">Donate ↗</a>
-  </div>
-</section>
-</div>
-    
 
     </div>
-  
+
+    <div class="li-block" data-li="panda" style="display:none">
+
+      <h2 class="li-category-title"><i class="fa-solid fa-paw"></i> Panda Donation Links</h2>
+      <div class="li-org-grid">
+
+        <div class="li-org-card">
+          <h3>Hong Kong Ocean Park Giant Panda Conservation</h3>
+          <p>Supports panda conservation programs at Ocean Park Hong Kong.</p>
+          <a href="https://oceanpark.paydollar.com/oceanpark/dona" class="li-org-btn" target="_blank" rel="noopener">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="li-org-card">
+          <h3>WWF – Adopt a Panda</h3>
+          <p>Symbolic panda adoption through WWF UK.</p>
+          <a href="https://support.wwf.org.uk/adopt-a-panda" class="li-org-btn" target="_blank" rel="noopener">Adopt <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="li-org-card">
+          <h3>Chengdu Giant Panda Breeding Research Foundation</h3>
+          <p>Supports the Chengdu panda breeding and research foundation.</p>
+          <a href="https://m.pandafoundation.cn/en/AboutUs/BInformation/" class="li-org-btn" target="_blank" rel="noopener">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="li-org-card">
+          <h3>Chengdu Research Base of Giant Panda Breeding</h3>
+          <p>Official donation/support page for the Chengdu research base.</p>
+          <a href="https://m.panda.org.cn/en/support/support/" class="li-org-btn" target="_blank" rel="noopener">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="li-org-card">
+          <h3>Panda Guardian</h3>
+          <p>Chinese donation platform via Weibo. A VPN may be needed to donate.</p>
+          <a href="https://gongyi.weibo.com/h5/r/229405" class="li-org-btn" target="_blank" rel="noopener">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -310,39 +310,27 @@
     var chips = document.querySelectorAll('.li-filter-chip');
     var blocks = document.querySelectorAll('.li-block');
 
+    function activate(li) {
+      var chip = document.querySelector('.li-filter-chip[data-li="' + li + '"]');
+      if (!chip) return;
+
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+
+      blocks.forEach(function (block) {
+        block.style.display = (block.getAttribute('data-li') === li) ? '' : 'none';
+      });
+    }
+
     chips.forEach(function (chip) {
       chip.addEventListener('click', function () {
-        var li = chip.getAttribute('data-li');
-
-        chips.forEach(function (c) { c.classList.remove('active'); });
-        chip.classList.add('active');
-
-        blocks.forEach(function (block) {
-          block.style.display = (block.getAttribute('data-li') === li) ? '' : 'none';
-        });
+        activate(chip.getAttribute('data-li'));
       });
     });
+
+    var hash = window.location.hash.replace('#', '');
+    if (hash) activate(hash);
   });
 </script>
-    <script>
-document.querySelectorAll('.li-tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.li-tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.li-tab-content').forEach(c => c.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById(btn.dataset.tab).classList.add('active');
-  });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash.replace('#', '');
-  if (hash) {
-    const btn = document.querySelector(`.li-tab-btn[data-tab="${hash}"]`);
-    if (btn) btn.click();
-  }
-});
-</script>
-
-
 </body>
 </html>
