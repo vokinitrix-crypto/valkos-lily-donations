@@ -12,6 +12,36 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0//css/all.min.css">
 
+  <style>
+    .update-post-poster-double{
+      flex-direction:column;
+      gap:10px;
+      padding:10px;
+    }
+    .update-post-poster-double img{
+      width:100%;
+      height:245px;
+      max-height:245px;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    .update-post-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:16px;
+    }
+    .update-post-tags .update-post-tag{
+      margin-bottom:0;
+    }
+    @media (max-width: 780px){
+      .update-post-poster-double img{
+        height:200px;
+      }
+    }
+  </style>
+
 </head>
   <body>
 
@@ -60,21 +90,25 @@
       </div>
     </div>
 
-    <div class="update-block">
-      <div class="update-images">
+    <div class="update-post">
+      <div class="update-post-poster update-post-poster-double">
         <img src="images/updates/pandas-for-valko-team.jpg" alt="Pandas for Valko poster">
         <img src="images/updates/valkos-legacy-pandas.jpg" alt="Valko's Legacy: Protecting Our Treasures poster">
       </div>
-      <div class="update-content">
-        <span class="hashtag-badge">#全世界都爱敖尹</span>
-        <span class="hashtag-badge">#ProtectOurTreasure</span>
+      <div class="update-post-body">
+        <div class="update-post-tags">
+          <span class="update-post-tag">#全世界都爱敖尹</span>
+          <span class="update-post-tag">#ProtectOurTreasure</span>
+        </div>
         <h3>Pandas for Valko</h3>
         <p>
           Supporting panda conservation in China, in honor of Valko's love
           for nature and all living things. Every paw makes a difference —
           join us in donating to verified panda conservation organizations.
         </p>
-        <a href="li-charities.html#panda" class="view-donations-btn">View Donations →</a>
+        <div class="update-post-actions">
+          <a href="li-charities.html#panda" class="update-post-btn update-post-btn-secondary">View Donations <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
       </div>
     </div>
 
