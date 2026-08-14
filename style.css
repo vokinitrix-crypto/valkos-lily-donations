@@ -1192,6 +1192,90 @@ nav a:hover{
     color:#B8FF90;
 }
 
+.campaign-filter-chip[data-filter="wildlife"].active{
+    background:rgba(92,124,250,.16);
+    border-color:rgba(92,124,250,.5);
+    color:#5C7CFA;
+}
+.campaign-filter-chip[data-filter="wildlife"].active span{ color:#5C7CFA; }
+
+.campaign-filter-chip[data-filter="animal-welfare"].active{
+    background:rgba(255,212,59,.16);
+    border-color:rgba(255,212,59,.5);
+    color:#FFD43B;
+}
+.campaign-filter-chip[data-filter="animal-welfare"].active span{ color:#FFD43B; }
+
+.campaign-filter-chip[data-filter="marine-life"].active{
+    background:rgba(77,171,247,.16);
+    border-color:rgba(77,171,247,.5);
+    color:#4DABF7;
+}
+.campaign-filter-chip[data-filter="marine-life"].active span{ color:#4DABF7; }
+
+.campaign-filter-chip[data-filter="disaster-relief"].active{
+    background:rgba(232,89,12,.16);
+    border-color:rgba(232,89,12,.5);
+    color:#E8590C;
+}
+.campaign-filter-chip[data-filter="disaster-relief"].active span{ color:#E8590C; }
+
+.campaign-filter-chip[data-filter="environmental"].active{
+    background:rgba(12,166,120,.16);
+    border-color:rgba(12,166,120,.5);
+    color:#0CA678;
+}
+.campaign-filter-chip[data-filter="environmental"].active span{ color:#0CA678; }
+
+.campaign-filter-chip[data-filter="homeless-support"].active{
+    background:rgba(255,169,77,.16);
+    border-color:rgba(255,169,77,.5);
+    color:#FFA94D;
+}
+.campaign-filter-chip[data-filter="homeless-support"].active span{ color:#FFA94D; }
+
+.campaign-filter-chip[data-filter="womens-support"].active{
+    background:rgba(247,131,172,.16);
+    border-color:rgba(247,131,172,.5);
+    color:#F783AC;
+}
+.campaign-filter-chip[data-filter="womens-support"].active span{ color:#F783AC; }
+
+.campaign-filter-chip[data-filter="mental-health"].active{
+    background:rgba(102,217,232,.16);
+    border-color:rgba(102,217,232,.5);
+    color:#66D9E8;
+}
+.campaign-filter-chip[data-filter="mental-health"].active span{ color:#66D9E8; }
+
+.campaign-filter-chip[data-filter="childrens-charities"].active{
+    background:rgba(230,73,128,.16);
+    border-color:rgba(230,73,128,.5);
+    color:#E64980;
+}
+.campaign-filter-chip[data-filter="childrens-charities"].active span{ color:#E64980; }
+
+.campaign-filter-chip[data-filter="medical-research"].active{
+    background:rgba(167,139,250,.16);
+    border-color:rgba(167,139,250,.5);
+    color:#A78BFA;
+}
+.campaign-filter-chip[data-filter="medical-research"].active span{ color:#A78BFA; }
+
+.campaign-filter-chip[data-filter="humanitarian-aid"].active{
+    background:rgba(250,82,82,.16);
+    border-color:rgba(250,82,82,.5);
+    color:#FA5252;
+}
+.campaign-filter-chip[data-filter="humanitarian-aid"].active span{ color:#FA5252; }
+
+.campaign-filter-chip[data-filter="community-services"].active{
+    background:rgba(154,168,199,.16);
+    border-color:rgba(154,168,199,.5);
+    color:#9AA8C7;
+}
+.campaign-filter-chip[data-filter="community-services"].active span{ color:#9AA8C7; }
+
 .campaigns-list{
     padding:40px 0 100px;
     background:
