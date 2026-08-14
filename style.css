@@ -837,6 +837,25 @@ nav a:hover{
         #050805;
     text-align:center;
 }
+.orgs-back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#9DE97A;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+    transition:opacity 0.2s ease;
+}
+.orgs-back-link:visited{
+    color:#9DE97A;
+}
+.orgs-back-link:hover{
+    text-decoration:underline;
+    text-underline-offset:4px;
+    opacity:0.85;
+}
 .orgs-overview{
     padding:20px 0 100px;
     background:
