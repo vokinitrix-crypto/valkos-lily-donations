@@ -13,6 +13,80 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0//css/all.min.css">
 
   <style>
+    .updates-hero{
+      max-width: 780px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .updates-hero-eyebrow{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #9DE97A;
+      margin-bottom: 14px;
+    }
+    .updates-hero-eyebrow::before,
+    .updates-hero-eyebrow::after{
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: rgba(157, 233, 122, 0.5);
+    }
+    .updates-hero h1{
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(32px, 5vw, 44px);
+      color: #f5f3ef;
+      margin: 0 0 16px;
+    }
+    .updates-hero p{
+      font-family: 'Inter', sans-serif;
+      font-size: 15.5px;
+      line-height: 1.75;
+      color: rgba(245, 243, 239, 0.72);
+      margin: 0;
+    }
+
+    .update-post{
+      position: relative;
+    }
+    .update-post[data-pinned="true"]{
+      border: 1px solid rgba(157, 233, 122, 0.45);
+      box-shadow: 0 0 0 1px rgba(157, 233, 122, 0.12), 0 18px 40px rgba(0,0,0,0.35);
+    }
+    .update-post-pin{
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(157, 233, 122, 0.14);
+      border: 1px solid rgba(157, 233, 122, 0.5);
+      backdrop-filter: blur(6px);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #9DE97A;
+    }
+    .update-post-pin i{
+      font-size: 11px;
+    }
+    .update-post[data-pinned="true"] .update-post-poster{
+      position: relative;
+    }
+
     .update-post-poster-double{
       flex-direction:column;
       gap:10px;
@@ -67,6 +141,9 @@
       .update-post-poster-double img{
         height:200px;
       }
+      .updates-hero{
+        margin-bottom: 36px;
+      }
     }
   </style>
 
@@ -104,7 +181,20 @@
 <section class="updates-section">
   <div class="container">
 
-    <div class="update-post">
+    <div class="updates-hero">
+      <span class="updates-hero-eyebrow">Updates</span>
+      <h1>What we're working on, together</h1>
+      <p>
+        Every update here marks a moment our community chose to act — a disaster
+        that needed relief, a species that needed protecting, a cause close to
+        one of our LIs' hearts. We follow what's happening in the world, find
+        organizations doing real work on the ground, and bring them to you so
+        giving is easy to find and easy to trust. If something here moves you,
+        we hope you'll join us.
+      </p>
+    </div>
+
+    <div class="update-post" id="update-caleb">
       <div class="update-post-poster">
         <img src="images/updates/caleb-make-a-positive-impact.jpg" alt="Make a Positive Impact - In Honor of Caleb">
       </div>
@@ -119,7 +209,7 @@
       </div>
     </div>
 
-    <div class="update-post">
+    <div class="update-post" id="update-pandas">
       <div class="update-post-poster update-post-poster-double">
         <img src="images/updates/pandas-for-valko-team.jpg" alt="Pandas for Valko poster">
         <img src="images/updates/valkos-legacy-pandas.jpg" alt="Valko's Legacy: Protecting Our Treasures poster">
@@ -143,7 +233,7 @@
       </div>
     </div>
 
-    <div class="update-post">
+    <div class="update-post" id="update-colombia">
       <div class="update-post-poster">
         <img src="images/updates/colombia.jpg" alt="Colombia Earthquake Relief">
       </div>
@@ -165,7 +255,7 @@
       </div>
     </div>
 
-    <div class="update-post">
+    <div class="update-post" id="update-japan">
       <div class="update-post-poster">
         <img src="images/updates/japan-earthquake.jpg" alt="Japan Earthquake Relief">
       </div>
@@ -191,7 +281,7 @@
       </div>
     </div>
 
-    <div class="update-post">
+    <div class="update-post" id="update-canada-wildfire">
       <div class="update-post-poster">
         <img src="images/updates/canada-wildfire.jpg" alt="Canada Wildfire Relief">
       </div>
@@ -217,6 +307,21 @@
       </div>
     </div>
 
+    <div class="update-post" id="update-rafayel">
+      <div class="update-post-poster">
+        <img src="images/updates/rafayel-make-a-positive-impact.jpg" alt="Make a Positive Impact - In Honor of Rafayel">
+      </div>
+      <div class="update-post-body">
+        <span class="update-post-tag">#CharitiesForRafayel</span>
+        <h3>Make a Positive Impact</h3>
+        <p>To give back in honor of Rafayel, instead of spending money in-game, we're making a difference and helping out those in need. Every donation made in Rafayel's name helps spread his love to the rest of the world.</p>
+        <div class="update-post-actions">
+          <a href="li-charities.html" class="update-post-btn update-post-btn-secondary">View Donations <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://x.com/seiyaspuppy/status/2088435130914226344?s=46" target="_blank" rel="noopener" class="update-post-btn-icon" aria-label="View original post on X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -238,6 +343,29 @@
      <span style="--i:15;"></span>
      <span style="--i:16;"></span>
 </div>
+
+<script>
+ 
+  (function(){
+    const container = document.querySelector('.updates-section .container');
+    if(!container) return;
+
+    const posts = Array.from(container.querySelectorAll('.update-post'));
+    const pinned = posts.filter(p => p.dataset.pinned === 'true');
+    const rest = posts.filter(p => p.dataset.pinned !== 'true');
+
+    pinned.forEach(post => {
+      if(!post.querySelector('.update-post-pin')){
+        const badge = document.createElement('span');
+        badge.className = 'update-post-pin';
+        badge.innerHTML = '<i class="fa-solid fa-thumbtack"></i> Pinned';
+        post.querySelector('.update-post-poster').appendChild(badge);
+      }
+    });
+
+    [...pinned, ...rest].forEach(post => container.appendChild(post));
+  })();
+</script>
 
 </body>
 </html>
